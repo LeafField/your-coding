@@ -8,6 +8,8 @@
   top: 0;
   left: 0;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  z-index: 10000;
+  background-color: #fff;
 
   @include mq(sp) {
     height: rem(65);
@@ -61,6 +63,7 @@
     font-size: rem(24);
     font-weight: bold;
     line-height: 1;
+    margin-bottom: rem(2);
 
     @include mq(sp) {
       font-size: rem(20);
@@ -92,7 +95,7 @@
     margin-right: rem(184);
     column-gap: rem(46);
     margin-bottom: rem(2);
-    @media screen and (max-width: 900px) {
+    @include mq(tb) {
       margin-right: rem(50);
     }
     @include mq(sp) {

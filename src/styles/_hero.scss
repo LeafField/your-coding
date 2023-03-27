@@ -1,0 +1,80 @@
+@use "utils" as *;
+
+// ヒーローセクション
+.hero {
+  padding-top: rem(225);
+  width: 100%;
+  overflow: hidden;
+  min-height: rem(700);
+  @include mq(tb) {
+    padding-top: 180px;
+  }
+
+  // コンテナ
+  &__container {
+    max-width: rem(1022);
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  // 左側テキスト欄
+  &__left {
+    margin-left: rem(20);
+    margin-top: rem(28);
+    flex-shrink: 1;
+  }
+  // セクションタイトル
+  &__title {
+    font-size: rem(32);
+    text-align: left;
+    white-space: nowrap;
+  }
+  // タイトル下テキスト
+  &__text {
+    margin-top: rem(44);
+  }
+  // テキスト下のボタン
+  &__btn {
+    margin-top: rem(44);
+  }
+
+  // 右側イラスト欄
+  &__right {
+    flex-shrink: 2;
+  }
+
+  // サラリーマンの画像
+  &__img {
+    max-width: rem(518);
+    height: auto;
+
+    @include mq(tb) {
+      width: 400px;
+    }
+
+    & img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  // 背景の丸
+  &__back {
+    position: absolute;
+    z-index: -1;
+    top: rem(-255);
+    right: rem(-256);
+    width: rem(708);
+    @include mq(tb) {
+      width: 600px;
+    }
+    & img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
