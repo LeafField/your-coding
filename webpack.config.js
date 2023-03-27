@@ -22,7 +22,7 @@ const HtmlWebpackPluginEntries = () => {
 /** @type {import("webpack").Configuration} */
 module.exports = {
   // 本番環境の場合modeをdevelopmentからproductionへと書き換えてください
-  mode: "development",
+  mode: "production",
   // 本番ビルド時にソースマップは削除してください（要件による）
   devtool: "source-map",
   entry: {
