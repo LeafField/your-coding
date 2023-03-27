@@ -1,0 +1,18 @@
+@use "utils" as *;
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bold;
+  font-display: swap;
+  color: #333;
+  overflow-x: hidden;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
