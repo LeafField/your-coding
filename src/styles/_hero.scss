@@ -6,6 +6,7 @@
   width: 100%;
   overflow: hidden;
   min-height: rem(700);
+  padding-inline: rem(15);
   @include mq(tb) {
     padding-top: 180px;
   }
@@ -17,6 +18,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    column-gap: 20px;
   }
 
   // 左側テキスト欄
@@ -51,7 +53,7 @@
     height: auto;
 
     @include mq(tb) {
-      width: 400px;
+      max-width: 400px;
     }
 
     & img {
