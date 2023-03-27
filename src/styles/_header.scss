@@ -79,6 +79,10 @@
       background-color: #eefbfb;
       transition: transform 0.6s ease-in-out;
       transform: translateX(100%);
+
+      &.js-active {
+        transform: none;
+      }
     }
   }
 
@@ -116,7 +120,7 @@
     margin-right: rem(21);
 
     @include mq(sp) {
-      display: contents !important;
+      display: none !important;
     }
   }
 }
@@ -138,23 +142,27 @@
       height: rem(2);
       background-color: #333;
       position: absolute;
+      transition: transform 0.5s ease-in-out;
 
-      &::before,
-      &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: rem(40);
-        height: rem(2);
-        background-color: #333;
+      &:nth-child(2) {
+        top: rem(12);
       }
-
-      &::before {
-        top: 12px;
-      }
-      &::after {
-        top: 24px;
+      &:nth-child(3) {
+        top: rem(24);
       }
     }
+  }
+}
+
+// ハンバーガーボタンのアニメーション
+.hamburger.js-active .hamburger__line {
+  &:nth-child(1) {
+    transform: translateY(rem(12)) rotate(-225deg);
+  }
+  &:nth-child(2) {
+    transform: scale(0) rotate(360deg);
+  }
+  &:nth-child(3) {
+    transform: translateY(rem(-12)) rotate(225deg);
   }
 }
