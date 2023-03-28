@@ -8,7 +8,10 @@
   min-height: rem(700);
   padding-inline: rem(15);
   @include mq(tb) {
-    padding-top: 180px;
+    padding-top: rem(180);
+  }
+  @include mq(sp) {
+    padding-top: rem(120);
   }
 
   // コンテナ
@@ -18,7 +21,12 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    column-gap: 20px;
+    column-gap: rem(20);
+    @include mq(sp) {
+      flex-direction: column;
+      align-items: center;
+      max-width: rem(455);
+    }
   }
 
   // 左側テキスト欄
@@ -26,6 +34,11 @@
     margin-left: rem(20);
     margin-top: rem(28);
     flex-shrink: 1;
+
+    @include mq(sp) {
+      margin-left: 0;
+      margin-top: 0;
+    }
   }
   // セクションタイトル
   &__title {
@@ -53,7 +66,10 @@
     height: auto;
 
     @include mq(tb) {
-      max-width: 400px;
+      max-width: rem(400);
+    }
+    @include mq(sp) {
+      margin-top: rem(40);
     }
 
     & img {
@@ -71,7 +87,11 @@
     right: rem(-256);
     width: rem(708);
     @include mq(tb) {
-      width: 600px;
+      width: rem(600);
+    }
+    @include mq(sp) {
+      top: -16%;
+      right: -32%;
     }
     & img {
       width: 100%;
