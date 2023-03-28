@@ -1,6 +1,7 @@
 $breakpoints: (
   sp: "(max-width:767px)",
   tb: "(max-width:900px)",
+  lg: "(max-width:1100px)",
   pc: "(min-width:768px)",
 );
 
@@ -10,10 +11,26 @@ $breakpoints: (
   }
 }
 
+@mixin sectionTitle() {
+  font-size: clamp(rem(28), vw(28, 767), rem(32));
+}
+
+@mixin sectionSubTitle() {
+  font-size: clamp(rem(24), vw(24, 767), rem(28));
+}
+
+@mixin mainText() {
+  font-size: clamp(rem(14), vw(14, 767), rem(16));
+}
+
 @function rem($pixel) {
   @return calc($pixel / 16 * 1rem);
 }
 
 @function vw($pixel, $basesize) {
   @return calc($pixel / $basesize * 100vw);
+}
+
+@function per($pixel, $basesize) {
+  @return calc($pixel / $basesize * 100%);
 }

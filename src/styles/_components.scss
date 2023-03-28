@@ -14,4 +14,44 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    transform: translateY(rem(3));
+    box-shadow: none;
+  }
+}
+
+.heading2 {
+  @include sectionTitle;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-right: rem(6);
+  @include mq(sp) {
+    margin-right: 0;
+  }
+
+  &-under {
+    color: #3ba6c9;
+    @include mainText;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: rem(10);
+    margin-right: rem(13);
+  }
+}
+
+.heading3 {
+  @include sectionSubTitle;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.sp-none {
+  @include mq(sp) {
+    display: contents;
+  }
 }
