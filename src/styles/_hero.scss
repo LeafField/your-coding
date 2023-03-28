@@ -45,6 +45,10 @@
     font-size: rem(32);
     text-align: left;
     white-space: nowrap;
+
+    @media screen and (max-width: 374px) {
+      white-space: normal;
+    }
   }
   // タイトル下テキスト
   &__text {
