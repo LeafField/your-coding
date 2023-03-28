@@ -1,3 +1,5 @@
+import { scrollAnimation } from "./scroll";
+
 const ACTIVE = "js-active";
 
 // ハンバーガーメニュー
@@ -9,7 +11,7 @@ const navLinks =
 const siteTitle = document.querySelector<HTMLAnchorElement>(".header__title")!;
 
 // ハンバーガーメニューを閉じる関数
-const hamburgerClose = () => {
+export const hamburgerClose = () => {
   if (hamburger.classList.contains(ACTIVE)) {
     hamburger.classList.remove(ACTIVE);
     nav.classList.remove(ACTIVE);
@@ -30,9 +32,21 @@ export const hamburgerActions = () => {
 
   // ハンバーガーメニュークリック時にメニューを閉じる
   navLinks.forEach((link) => {
-    link.addEventListener("click", hamburgerClose);
+    link.addEventListener("click", (e: MouseEvent) => {
+      hamburgerClose();
+      scrollAnimation(e);
+    });
   });
 
   // サイトタイトルクリック時にもハンバーガーメニューを閉じる
   siteTitle.addEventListener("click", hamburgerClose);
+
+  // ヘッダータイトルのスクロール
+  // 必要な要素の取得
+  const headerTitle =
+    document.querySelector<HTMLAnchorElement>(".header__inner")!;
+  headerTitle.addEventListener("click", (e: MouseEvent) => {
+    hamburgerClose();
+    scrollAnimation(e);
+  });
 };
