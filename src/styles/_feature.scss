@@ -3,6 +3,7 @@
 // featureセクション
 .feature {
   padding-top: rem(139);
+  padding-bottom: rem(149);
   overflow-x: hidden;
 
   @include mq(lg) {
