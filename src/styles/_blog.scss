@@ -1,0 +1,14 @@
+@use "utils" as *;
+
+.blog {
+  background-color: #eefbfb;
+  height: 700px;
+  padding-top: rem(53);
+
+  &__title {
+    margin-left: rem(8);
+  }
+  &__titleUnder {
+    margin-left: rem(8);
+  }
+}
