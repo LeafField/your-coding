@@ -5,10 +5,8 @@
   background-color: #eefbfb;
   padding-top: rem(55);
   padding-bottom: rem(68);
-  @include mq(sp) {
-    padding-inline: rem(15);
-  }
-
+  overflow-x: hidden;
+  padding-inline: rem(15);
   // セクションタイトル
   &__title {
     margin-left: rem(4);
@@ -20,9 +18,14 @@
 
   // セクションの注意書き
   &__notes {
-    margin-top: 36px;
+    margin-top: rem(36);
     text-align: center;
     @include mainText;
+  }
+
+  &__container {
+    max-width: rem(926);
+    margin-inline: auto;
   }
 
   // セクション内の表
@@ -39,7 +42,8 @@
     }
 
     @include mq(pc) {
-      width: clamp(rem(500), vw(926, 956), rem(926));
+      // width: clamp(rem(500), vw(926, 956), rem(926));
+      width: 100%;
       height: rem(410);
       margin-inline: auto;
       border-collapse: collapse;

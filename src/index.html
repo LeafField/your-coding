@@ -137,26 +137,28 @@
     <h2 class="price__title heading2" id="price">価格</h2>
     <p class="price__titleUnder heading2-under">Price</p>
 
-    <table class="js-intersection">
-      <tbody>
-        <tr>
-          <th>HTMLコーディングトップページ</th>
-          <td>30.000円〜</td>
-        </tr>
-        <tr>
-          <th>HTMLコーディング下層1ページ</th>
-          <td>10.000円〜</td>
-        </tr>
-        <tr>
-          <th>HTML+WordPressトップページ</th>
-          <td>55.000円〜</td>
-        </tr>
-        <tr>
-          <th>HTML+WordPress下層1ページ</th>
-          <td>15.000円〜</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="price__container">
+      <table class="js-intersection">
+        <tbody>
+          <tr>
+            <th>HTMLコーディングトップページ</th>
+            <td>30.000円〜</td>
+          </tr>
+          <tr>
+            <th>HTMLコーディング下層1ページ</th>
+            <td>10.000円〜</td>
+          </tr>
+          <tr>
+            <th>HTML+WordPressトップページ</th>
+            <td>55.000円〜</td>
+          </tr>
+          <tr>
+            <th>HTML+WordPress下層1ページ</th>
+            <td>15.000円〜</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <p class="price__notes">＊詳細な価格はページや仕様によって異なります</p>
   </section>
 
@@ -204,7 +206,35 @@
   <section class="blog">
     <h2 class="blog__title heading2">ブログ</h2>
     <p class="blog__titleUnder heading2-under">Blog</p>
-
+    <div class="blog__container js-intersection">
+      <article class="blog__card">
+        <figure class="card__img">
+          <img src="./images/blog001.jpg" width="389" height="260" alt="">
+        </figure>
+        <div class="card__text">
+          <h3 class="card__title"><a href="#">サイトをリニューアルオープンしました。</a></h3>
+          <p class="card__time">2020.01.23</p>
+        </div>
+      </article>
+      <article class="blog__card">
+        <figure class="card__img">
+          <img src="./images/blog002.jpg" width="389" height="260" alt="">
+        </figure>
+        <div class="card__text">
+          <h3 class="card__title"><a href="#">WebサイトでSEO内部施策に適したコーディングでどれぐらいサイトが早くなるのか検証してみました</a></h3>
+          <p class="card__time">2020.01.24</p>
+        </div>
+      </article>
+      <article class="blog__card">
+        <figure class="card__img">
+          <img src="./images/blog003.jpg" width="389" height="260" alt="">
+        </figure>
+        <div class="card__text">
+          <h3 class="card__title"><a href="#">ユアコーディングではデザイナーの方を広く募集しています。</a></h3>
+          <p class="card__time">2020.01.25</p>
+        </div>
+      </article>
+    </div>
   </section>
 </body>
 
