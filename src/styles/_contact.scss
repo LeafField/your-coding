@@ -1,0 +1,176 @@
+@use "utils" as *;
+
+.contact {
+  background-image: linear-gradient(to right, #05a5fa, #63fbd7, #67ffd6);
+  height: 1027px;
+  padding-top: rem(60);
+
+  &__title {
+    margin-left: rem(6);
+    color: #fff;
+  }
+  &__titleUnder {
+    margin-left: rem(16);
+    color: #fff;
+  }
+  &__desc {
+    color: #fff;
+    margin-top: rem(33);
+    text-align: center;
+  }
+
+  &__container {
+    max-width: rem(908);
+    height: rem(689);
+    margin-inline: auto;
+    box-shadow: 0 rem(3) rem(6) 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    margin-top: rem(44);
+    padding-left: rem(63);
+  }
+}
+
+// フォーム
+.contact {
+  // 各インプットとラベルのコンテナ
+  &__name {
+    display: flex;
+    flex-direction: column;
+    padding-top: rem(34);
+  }
+
+  &__mail {
+    display: flex;
+    flex-direction: column;
+    padding-top: rem(24);
+  }
+
+  &__content {
+    padding-top: rem(23);
+  }
+
+  &__agreement {
+    padding-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-image: linear-gradient(to right, #fa41cc, #6020b0);
+    width: rem(155);
+    height: rem(37);
+    color: #fff;
+    margin-top: rem(30);
+    display: block;
+    margin-left: per(336, 908);
+    font-size: rem(14);
+  }
+
+  // ラベル
+  &__label {
+    &--name {
+      display: flex;
+    }
+    &--mail {
+      display: flex;
+    }
+    &--content {
+      display: flex;
+    }
+    &--agreement {
+      position: relative;
+      width: fit-content;
+      margin-right: rem(37);
+
+      &::before {
+        content: "";
+        display: block;
+        border: solid rem(1) #707070;
+        background-color: #fff;
+        width: rem(20);
+        height: rem(20);
+        position: absolute;
+        left: rem(-30);
+        top: rem(4);
+      }
+      &::after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 25px;
+        border-right: solid rem(2) #707070;
+        border-bottom: solid rem(2) #707070;
+        transform: rotate(45deg);
+        position: absolute;
+        top: rem(-4);
+        left: rem(-20);
+        opacity: 0;
+      }
+    }
+  }
+
+  // インプット
+  &__input {
+    &--name {
+      height: rem(43);
+      max-width: rem(499);
+      border-radius: rem(3);
+      background-color: #eefbfb;
+      padding-inline: rem(10);
+      margin-top: rem(36);
+      vertical-align: top;
+      font-weight: normal;
+    }
+    &--mail {
+      height: rem(43);
+      max-width: rem(499);
+      border-radius: rem(3);
+      padding-inline: rem(10);
+      margin-top: rem(31);
+      background-color: #eefbfb;
+      font-weight: normal;
+    }
+    &--agreement {
+      // display: none;
+      opacity: 0;
+      position: absolute;
+      left: 30%;
+    }
+  }
+  // テキストエリア
+  &__textArea {
+    width: per(783, 908);
+    height: rem(179);
+    border-radius: rem(3);
+    background-color: #eefbfb;
+    margin-top: rem(35);
+    padding-inline: rem(10);
+    padding-top: rem(8);
+    font-weight: normal;
+    resize: none;
+  }
+
+  // 必須
+  &__indispensable {
+    display: inline-block;
+    border-radius: rem(10);
+    background-color: #0c449b;
+    width: rem(60);
+    height: rem(30);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: rem(23);
+  }
+}
+
+// チェックボックスチェック時のスタイル
+input[type="checkbox"]:checked + label {
+  &::after {
+    opacity: 1;
+  }
+}
