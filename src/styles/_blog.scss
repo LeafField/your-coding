@@ -26,6 +26,7 @@
 
     @include mq(sp) {
       grid-template-columns: 1fr;
+      grid-template-rows: auto;
     }
 
     &.js-intersection {
@@ -54,7 +55,8 @@
 // 各ブログカード内
 .card {
   &__img {
-    max-width: rem(389);
+    // max-width: rem(389);
+    width: 100%;
 
     & img {
       width: 100%;
@@ -89,7 +91,11 @@
 
   &__time {
     text-align: right;
-    margin-bottom: 11px;
-    margin-right: 32px;
+    margin-bottom: rem(11);
+    margin-right: rem(32);
+
+    @include mq(sp) {
+      margin-top: rem(16);
+    }
   }
 }

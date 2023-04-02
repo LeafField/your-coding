@@ -13,3 +13,5 @@ await imagemin(["assets/*.{jpg,png,gif,svg}"], {
     imageminSvgo(),
   ],
 });
+
+console.log("Image compression complete");
