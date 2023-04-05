@@ -92,6 +92,7 @@
       position: relative;
       width: fit-content;
       margin-right: rem(37);
+      cursor: pointer;
 
       @include mq(sp) {
         margin-right: 0;
