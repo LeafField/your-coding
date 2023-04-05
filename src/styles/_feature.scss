@@ -3,6 +3,8 @@
 // featureセクション
 .feature {
   padding-top: rem(139);
+  padding-bottom: rem(149);
+  overflow-x: hidden;
 
   @include mq(lg) {
     padding-top: rem(100);
@@ -55,9 +57,14 @@
       width: rem(380);
       height: auto;
       margin-left: rem(57);
+      transition: all 0.6s ease-out;
       @include mq(lg) {
         width: rem(300);
         margin-left: 0;
+      }
+      &.js-intersection {
+        transform: translateX(-100px);
+        opacity: 0;
       }
 
       & img {
@@ -69,9 +76,15 @@
     }
 
     & .block__text {
-      margin-top: rem(51);
+      padding-top: rem(51);
+      transition: all 0.6s ease-out;
       @include mq(lg) {
         margin-top: rem(25);
+      }
+
+      &.js-intersection {
+        transform: translateX(100px);
+        opacity: 0;
       }
     }
 
@@ -124,8 +137,14 @@
       width: rem(479);
       height: auto;
       margin-top: rem(4);
+      transition: all 0.6s ease-out;
       @include mq(lg) {
         width: rem(300);
+      }
+
+      &.js-intersection {
+        transform: translateX(100px);
+        opacity: 0;
       }
 
       & img {
@@ -138,9 +157,15 @@
 
     & .block__text {
       margin-left: rem(84);
+      transition: all 0.6s ease-out;
       @include mq(lg) {
         margin-top: rem(25);
         margin-left: 0;
+      }
+
+      &.js-intersection {
+        transform: translateX(-100px);
+        opacity: 0;
       }
     }
 
@@ -198,8 +223,14 @@
     & .block__img {
       width: rem(400);
       height: auto;
+      transition: all 0.6s ease-out;
       @include mq(sp) {
         width: rem(300);
+      }
+
+      &.js-intersection {
+        transform: translateX(-100px);
+        opacity: 0;
       }
 
       & img {
@@ -212,6 +243,11 @@
 
     & .block__text {
       margin-top: rem(13);
+      transition: all 0.6s ease-out;
+      &.js-intersection {
+        transform: translateX(100px);
+        opacity: 0;
+      }
     }
 
     & .block__title {

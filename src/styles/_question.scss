@@ -1,0 +1,23 @@
+@use "utils" as *;
+
+// セクション
+.question {
+  padding-top: rem(55);
+  padding-inline: rem(15);
+  padding-bottom: 86px;
+
+  // セクションタイトル
+  &__title {
+    margin-left: rem(6);
+  }
+  &__titleUnder {
+    margin-left: rem(6);
+  }
+
+  // コンテナ
+  &__container {
+    max-width: rem(907);
+    margin-inline: auto;
+    margin-top: rem(32);
+  }
+}

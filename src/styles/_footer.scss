@@ -1,0 +1,32 @@
+@use "utils" as *;
+
+.footer {
+  padding-top: rem(43);
+  padding-bottom: rem(49);
+  background-color: #f8f8f8;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__titleUnder {
+    display: flex;
+    column-gap: rem(29);
+    row-gap: rem(8);
+    justify-content: center;
+    margin-top: rem(21);
+    margin-left: rem(32);
+    flex-wrap: wrap;
+    @include mq(sp) {
+      margin-left: 0;
+    }
+  }
+
+  &__copy {
+    display: block;
+    margin-top: rem(52);
+    text-align: center;
+    font-weight: normal;
+    font-size: rem(14);
+  }
+}

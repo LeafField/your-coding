@@ -10,6 +10,17 @@ body {
   font-display: swap;
   color: #333;
   overflow-x: hidden;
+
+  animation: fvAnimation 1.2s ease-in-out;
+}
+
+@keyframes fvAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 a {

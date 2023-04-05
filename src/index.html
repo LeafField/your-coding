@@ -35,10 +35,10 @@
       <nav class="header__nav">
         <ul class="header__list">
           <li><a href="#feature">特徴</a></li>
-          <li><a href="#">価格</a></li>
-          <li><a href="#">お問い合わせ</a></li>
+          <li><a href="#price">価格</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
         </ul>
-        <a class="header__btn contact-btn" href="#"><span>お問い合わせ</span></a>
+        <a class="header__btn contact-btn" href="#contact"><span>お問い合わせ</span></a>
       </nav>
     </div>
   </header>
@@ -61,7 +61,7 @@
           デザインに注力されたい方の<br>
           助けになります
         </p>
-        <a class="hero__btn contact-btn" href="#">お問い合わせ</a>
+        <a class="hero__btn contact-btn" href="#contact">お問い合わせ</a>
       </div>
       <div class="hero__right">
         <figure class="hero__img">
@@ -78,10 +78,10 @@
       <h3 class="feature__subtitle heading3">高速コーディング</h3>
 
       <div class="feature__block--one">
-        <figure class="block__img">
+        <figure class="block__img js-intersection">
           <img src="./images/cto.png" width="380" height="314" alt="">
         </figure>
-        <div class="block__text">
+        <div class="block__text js-intersection">
           <h4 class="block__title ">コーディングに特化したフリーランスのため、<br>
             スピード感を持った開発が可能。</h4>
           <p class="block__underText">
@@ -96,10 +96,10 @@
       <h3 class="feature__subtitle--two heading3">高品質</h3>
 
       <div class="feature__block--two">
-        <figure class="block__img">
+        <figure class="block__img js-intersection">
           <img src="./images/building_website.png" width="479" height="329" alt="">
         </figure>
-        <div class="block__text">
+        <div class="block__text js-intersection">
           <h4 class="block__title ">正しいマークアップで、<br>
             内部SEOに強いコーディングを<br>
             デフォルトで行います。</h4>
@@ -114,11 +114,11 @@
       <h3 class="feature__subtitle--three heading3">迅速なレスポンス</h3>
 
       <div class="feature__block--three">
-        <figure class="block__img">
+        <figure class="block__img js-intersection">
           <img src="./images/new_message.png" width="400" height="290" alt="">
         </figure>
-        <div class="block__text">
-          <h4 class="block__title ">原則いただいたメッセージは、<br>
+        <div class="block__text js-intersection">
+          <h4 class="block__title">原則いただいたメッセージは、<br>
             業務時間内であれば6時間以内に<br>
             お返しいたします。</h4>
           <p class="block__underText">
@@ -129,10 +129,342 @@
           </p>
         </div>
       </div>
-
     </div>
     </div>
   </section>
+
+  <section class="price">
+    <h2 class="price__title heading2" id="price">価格</h2>
+    <p class="price__titleUnder heading2-under">Price</p>
+
+    <div class="price__container">
+      <table class="js-intersection">
+        <tbody>
+          <tr>
+            <th>HTMLコーディングトップページ</th>
+            <td>30.000円〜</td>
+          </tr>
+          <tr>
+            <th>HTMLコーディング下層1ページ</th>
+            <td>10.000円〜</td>
+          </tr>
+          <tr>
+            <th>HTML+WordPressトップページ</th>
+            <td>55.000円〜</td>
+          </tr>
+          <tr>
+            <th>HTML+WordPress下層1ページ</th>
+            <td>15.000円〜</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="price__notes">＊詳細な価格はページや仕様によって異なります</p>
+  </section>
+
+  <section class="question">
+    <div class="question__title heading2">よくある質問</div>
+    <p class="question__titleUnder heading2-under">faq</p>
+    <div class="question__container">
+      <details class="js-details" open="true">
+        <summary class="js-summary">
+          <span class="summary-inner">デザインから一貫してお願いすることは可能でしょうか</span>
+        </summary>
+        <div class="content js-content">
+          <div class="content__inner">
+            ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。<br>
+            ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。
+          </div>
+        </div>
+      </details>
+
+      <details class="js-details" open="true">
+        <summary class="js-summary">
+          <span class="summary-inner">WordPressのカスタマイズをお願いすることも可能でしょうか？</span>
+        </summary>
+        <div class="content js-content">
+          <div class="content__inner">
+            可能です。ただECサイトなどの場合は構築難易度や工数の関係で綿密にヒアリングさせていただきたく思います。
+          </div>
+        </div>
+      </details>
+
+      <details class="js-details" open="true">
+        <summary class="js-summary">
+          <span class="summary-inner">コーディングのスピード感が知りたい</span>
+        </summary>
+        <div class="content js-content">
+          <div class="content__inner">
+            HTMLレスポンシブ込み5ページで1週間、10ページで2週間、WordPressサイト5ページで2週間、10ページで3週間が目安に
+            なります。
+          </div>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <section class="blog">
+    <h2 class="blog__title heading2">ブログ</h2>
+    <p class="blog__titleUnder heading2-under">Blog</p>
+    <div class="blog__container js-intersection">
+      <article class="blog__card">
+        <figure class="card__img">
+          <img src="./images/blog001.jpg" width="389" height="260" alt="">
+        </figure>
+        <div class="card__text">
+          <h3 class="card__title"><a href="#">サイトをリニューアルオープンしました。</a></h3>
+          <p class="card__time">2020.01.23</p>
+        </div>
+      </article>
+      <article class="blog__card">
+        <figure class="card__img">
+          <img src="./images/blog002.jpg" width="389" height="260" alt="">
+        </figure>
+        <div class="card__text">
+          <h3 class="card__title"><a href="#">WebサイトでSEO内部施策に適したコーディングでどれぐらいサイトが早くなるのか検証してみました</a></h3>
+          <p class="card__time">2020.01.24</p>
+        </div>
+      </article>
+      <article class="blog__card">
+        <figure class="card__img">
+          <img src="./images/blog003.jpg" width="389" height="260" alt="">
+        </figure>
+        <div class="card__text">
+          <h3 class="card__title"><a href="#">ユアコーディングではデザイナーの方を広く募集しています。</a></h3>
+          <p class="card__time">2020.01.25</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="works">
+    <h2 class="works__title heading2">制作実績</h2>
+    <p class="works__titleUnder heading2-under">Works</p>
+
+
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <figure class="works__img">
+            <img src="./images/works001.jpg" width="322" height="211" alt="">
+          </figure>
+          <div class="works__text">
+            <h3 class="works__subTitle">コーディングカンファレンスのイベント
+              LPの制作を行いました！</h3>
+            <div class="works__desc">
+              採用技術：jQuery,WordPress<br>
+              実装期間：4週間<br>
+              担当コーダー：石井
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <figure class="works__img">
+            <img src="./images/works002.jpg" width="322" height="211" alt="">
+          </figure>
+          <div class="works__text">
+            <h3 class="works__subTitle">株式会社サンプル様採用サイトのコーデ
+              ィングを行いました！</h3>
+            <div class="works__desc">
+              採用技術：jQuery,Bootstrap4<br>
+              実装期間：2週間<br>
+              担当コーダー：石井
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <figure class="works__img">
+            <img src="./images/works003.jpg" width="322" height="211" alt="">
+          </figure>
+          <div class="works__text">
+            <h3 class="works__subTitle">株式会社サンプル様通販サイトのコーデ
+              ィングを行いました！</h3>
+            <div class="works__desc">
+              採用技術：jQuery,Bootstrap4<br>
+              実装期間：6週間<br>
+              担当コーダー：石井
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <figure class="works__img">
+            <img src="./images/works002.jpg" width="322" height="211" alt="">
+          </figure>
+          <div class="works__text">
+            <h3 class="works__subTitle">株式会社サンプル様採用サイトのコーデ
+              ィングを行いました！</h3>
+            <div class="works__desc">
+              採用技術：jQuery,Bootstrap4<br>
+              実装期間：2週間<br>
+              担当コーダー：石井
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <figure class="works__img">
+            <img src="./images/works002.jpg" width="322" height="211" alt="">
+          </figure>
+          <div class="works__text">
+            <h3 class="works__subTitle">株式会社サンプル様採用サイトのコーデ
+              ィングを行いました！</h3>
+            <div class="works__desc">
+              採用技術：jQuery,Bootstrap4<br>
+              実装期間：2週間<br>
+              担当コーダー：石井
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <figure class="works__img">
+            <img src="./images/works002.jpg" width="322" height="211" alt="">
+          </figure>
+          <div class="works__text">
+            <h3 class="works__subTitle">株式会社サンプル様採用サイトのコーデ
+              ィングを行いました！</h3>
+            <div class="works__desc">
+              採用技術：jQuery,Bootstrap4<br>
+              実装期間：2週間<br>
+              担当コーダー：石井
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <figure class="works__img">
+            <img src="./images/works002.jpg" width="322" height="211" alt="">
+          </figure>
+          <div class="works__text">
+            <h3 class="works__subTitle">株式会社サンプル様採用サイトのコーデ
+              ィングを行いました！</h3>
+            <div class="works__desc">
+              採用技術：jQuery,Bootstrap4<br>
+              実装期間：2週間<br>
+              担当コーダー：石井
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <figure class="works__img">
+            <img src="./images/works002.jpg" width="322" height="211" alt="">
+          </figure>
+          <div class="works__text">
+            <h3 class="works__subTitle">株式会社サンプル様採用サイトのコーデ
+              ィングを行いました！</h3>
+            <div class="works__desc">
+              採用技術：jQuery,Bootstrap4<br>
+              実装期間：2週間<br>
+              担当コーダー：石井
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <figure class="works__img">
+            <img src="./images/works002.jpg" width="322" height="211" alt="">
+          </figure>
+          <div class="works__text">
+            <h3 class="works__subTitle">株式会社サンプル様採用サイトのコーデ
+              ィングを行いました！</h3>
+            <div class="works__desc">
+              採用技術：jQuery,Bootstrap4<br>
+              実装期間：2週間<br>
+              担当コーダー：石井
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <figure class="works__img">
+            <img src="./images/works002.jpg" width="322" height="211" alt="">
+          </figure>
+          <div class="works__text">
+            <h3 class="works__subTitle">株式会社サンプル様採用サイトのコーデ
+              ィングを行いました！</h3>
+            <div class="works__desc">
+              採用技術：jQuery,Bootstrap4<br>
+              実装期間：2週間<br>
+              担当コーダー：石井
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <figure class="works__img">
+            <img src="./images/works002.jpg" width="322" height="211" alt="">
+          </figure>
+          <div class="works__text">
+            <h3 class="works__subTitle">株式会社サンプル様採用サイトのコーデ
+              ィングを行いました！</h3>
+            <div class="works__desc">
+              採用技術：jQuery,Bootstrap4<br>
+              実装期間：2週間<br>
+              担当コーダー：石井
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <figure class="works__img">
+            <img src="./images/works002.jpg" width="322" height="211" alt="">
+          </figure>
+          <div class="works__text">
+            <h3 class="works__subTitle">株式会社サンプル様採用サイトのコーデ
+              ィングを行いました！</h3>
+            <div class="works__desc">
+              採用技術：jQuery,Bootstrap4<br>
+              実装期間：2週間<br>
+              担当コーダー：石井
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="contact__title heading2">お問い合わせ</h2>
+    <p class="contact__titleUnder heading2-under">Contact</p>
+    <p class="contact__desc">コーディングの人出が足りないとき、<br>
+      あなたの力になります</p>
+    <div class="contact__container">
+      <form action="">
+        <div class="contact__name">
+          <label class="contact__label--name" for="name">お名前<span class="contact__indispensable">必須</span></label>
+          <input type="text" id="name" class="contact__input--name" required>
+        </div>
+
+        <div class="contact__mail">
+          <label class="contact__label--mail" for="mail">メールアドレス<span class="contact__indispensable">必須</span></label>
+          <input class="contact__input--mail" type="text" id="mail" required>
+        </div>
+
+        <div class="contact__content">
+          <label class="contact__label--content" for="content">お問い合わせ内容<span
+              class="contact__indispensable">必須</span></label>
+          <textarea class="contact__textArea" id="content" cols="30" rows="10" required></textarea>
+        </div>
+
+        <div class="contact__agreement">
+          <input class="contact__input--agreement" type="checkbox" id="checkbox" required>
+          <label class="contact__label--agreement" for="checkbox">プライバシーポリシーに同意する</label>
+        </div>
+
+        <button class="contact__btn" type="submit">送信する</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <h2 class="footer__title">ユアコーディング</h2>
+    <div class="footer__titleUnder">
+      <div class="footer__left">プライバシーポリシー</div>
+      <div class="footer__right">個人商取引法に基づく表記</div>
+    </div>
+    <small class="footer__copy">©ユアコーディング, All Rights Reserved.</small>
+  </footer>
 </body>
 
 </html>

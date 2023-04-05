@@ -1,0 +1,101 @@
+@use "utils" as *;
+
+.blog {
+  background-color: #eefbfb;
+  padding-top: rem(53);
+  padding-inline: rem(15);
+  padding-bottom: rem(91);
+  overflow-x: hidden;
+
+  &__title {
+    margin-left: rem(8);
+  }
+  &__titleUnder {
+    margin-left: rem(8);
+  }
+
+  &__container {
+    display: grid;
+    max-width: calc((389 * 3 + 30 * 2) / 16 * 1rem);
+    margin-inline: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(rem(387), 1fr);
+    gap: rem(30);
+    margin-top: rem(54);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+    @include mq(sp) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+
+    &.js-intersection {
+      transform: translateX(rem(50));
+      opacity: 0;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 rem(3) rem(6) 0 rgba(0, 0, 0, 0.16);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+
+    &:hover {
+      transform: translateY(rem(2));
+      box-shadow: 0 rem(1) rem(6) 0 rgba(0, 0, 0, 0.16);
+    }
+
+    &.js-intersection {
+      opacity: 0;
+    }
+  }
+}
+
+// 各ブログカード内
+.card {
+  &__img {
+    // max-width: rem(389);
+    width: 100%;
+
+    & img {
+      width: 100%;
+      height: auto;
+      vertical-align: bottom;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    flex-grow: 1;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    padding-left: rem(18);
+    padding-top: rem(14);
+    padding-right: rem(18);
+
+    & a {
+      color: #333;
+      font-size: rem(18);
+
+      @include mq(sp) {
+        font-size: rem(16);
+      }
+    }
+  }
+
+  &__time {
+    text-align: right;
+    margin-bottom: rem(11);
+    margin-right: rem(32);
+
+    @include mq(sp) {
+      margin-top: rem(16);
+    }
+  }
+}
