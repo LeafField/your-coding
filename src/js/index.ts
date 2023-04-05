@@ -35,7 +35,7 @@ new Swiper(".swiper", {
   },
   breakpoints: {
     1920: {
-      slidesPerView: 5,
+      slidesPerView: "auto",
       loopedSlides: 5,
       spaceBetween: 56,
     },
