@@ -2,8 +2,9 @@
 
 .contact {
   background-image: linear-gradient(to right, #05a5fa, #63fbd7, #67ffd6);
-  height: 1027px;
   padding-top: rem(60);
+  padding-inline: rem(15);
+  padding-bottom: rem(70);
 
   &__title {
     margin-left: rem(6);
@@ -27,6 +28,10 @@
     background-color: #fff;
     margin-top: rem(44);
     padding-left: rem(63);
+
+    @include mq(sp) {
+      padding-inline: rem(20);
+    }
   }
 }
 
@@ -50,15 +55,15 @@
   }
 
   &__agreement {
-    padding-top: 20px;
+    padding-top: rem(20);
     position: relative;
     display: flex;
     justify-content: center;
   }
 
   &__btn {
-    border-radius: 10px;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border-radius: rem(10);
+    box-shadow: 0 rem(3) rem(6) 0 rgba(0, 0, 0, 0.16);
     background-image: linear-gradient(to right, #fa41cc, #6020b0);
     width: rem(155);
     height: rem(37);
@@ -67,6 +72,9 @@
     display: block;
     margin-left: per(336, 908);
     font-size: rem(14);
+    @include mq(sp) {
+      margin-inline: auto;
+    }
   }
 
   // ラベル
@@ -85,6 +93,10 @@
       width: fit-content;
       margin-right: rem(37);
 
+      @include mq(sp) {
+        margin-right: 0;
+      }
+
       &::before {
         content: "";
         display: block;
@@ -99,8 +111,8 @@
       &::after {
         content: "";
         display: block;
-        width: 10px;
-        height: 25px;
+        width: rem(10);
+        height: rem(25);
         border-right: solid rem(2) #707070;
         border-bottom: solid rem(2) #707070;
         transform: rotate(45deg);
@@ -151,6 +163,10 @@
     padding-top: rem(8);
     font-weight: normal;
     resize: none;
+
+    @include mq(sp) {
+      width: 100%;
+    }
   }
 
   // 必須
